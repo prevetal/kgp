@@ -1,0 +1,345 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 28px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 50px;
+    }
+
+
+
+    .products .owl-carousel .owl-nav button,
+    .gallery .owl-carousel .owl-nav button
+    {
+        bottom: calc(100% + 14px);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header .logo a,
+    .mob_header .logo img
+    {
+        height: 80px;
+    }
+
+
+    .mob_header .callback_btn
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: 20px;
+    }
+
+    .page_head .cont > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head.center
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .bottom .agree
+    {
+        font-size: 13px;
+
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .form .bottom .submit
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 28px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .text_block img.right,
+    .text_block img.left
+    {
+        float: none;
+
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: 100%;
+    }
+
+    .text_block .cols .col + .col
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 400px;
+        padding-top: 50px;
+        padding-bottom: 116px;
+    }
+
+    .main_slider .slide .info
+    {
+        width: 100%;
+    }
+
+    .main_slider .slide .title
+    {
+        font-size: 38px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 18px;
+
+        width: 100%;
+    }
+
+
+    .main_slider .slide .link
+    {
+        margin-top: 20px;
+    }
+
+
+    .main_slider .count
+    {
+        display: none;
+    }
+
+
+    .main_slider .owl-carousel .owl-nav button
+    {
+        bottom: 30px;
+    }
+
+
+    .main_slider .slide .bg
+    {
+        background-position: 30% 50%;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .cat
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 80px 20px 50px;
+    }
+
+    .categories .cat:before
+    {
+        display: none;
+    }
+
+
+    .categories .cat .img
+    {
+        width: 250px;
+    }
+
+    .categories .cat + .cat .img
+    {
+        left: 105px;
+
+        width: 420px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .products .product
+    {
+        padding: 15px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        height: 360px;
+    }
+
+
+
+    /*---------
+        Faq
+    ---------*/
+    .faq .item .title
+    {
+        font-size: 17px;
+
+        padding: 10px 50px 10px 15px;
+    }
+
+    .faq .item .title .icon
+    {
+        width: 22px;
+        height: 12px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .action_form .info
+    {
+        margin-bottom: 25px;
+    }
+
+    .action_form .info .title
+    {
+        font-size: 25px;
+    }
+
+    .action_form .info .call
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    .action_form .form.mini,
+    .action_form .form
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+
+
+    .action_form .img
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo
+    {
+        display: none;
+    }
+
+
+    footer .contacts .val
+    {
+        width: calc(100% - 135px);
+    }
+
+
+    footer .footer .privacy_policy
+    {
+        width: 100%;
+    }
+
+
+    footer .creator
+    {
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 20px;
+    }
+}

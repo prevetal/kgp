@@ -1,0 +1,326 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 26px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header .logo a,
+    .mob_header .logo img
+    {
+        height: 68px;
+    }
+
+
+    .mob_header .phone
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+    .mob_header .search
+    {
+        margin-left: 10px;
+    }
+
+    .mob_header .search .mini_modal
+    {
+        padding: 15px 20px;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 25px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 9px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .cont
+    {
+        padding-top: 40px;
+    }
+
+    .main_slider .slide .title
+    {
+        font-size: 35px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .cat .img
+    {
+        width: 50%;
+    }
+
+    .categories .cat + .cat .img
+    {
+        left: 70px;
+
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-bottom: -15px;
+        margin-left: -15px;
+    }
+
+    .products .row > *
+    {
+        width: calc(50% - 15px);
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+
+    .products .product .name
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .slider
+    {
+        padding: 0;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .item
+    {
+        font-size: 15px;
+        line-height: 120%;
+    }
+
+    .gallery .item .caption
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*---------
+        Faq
+    ---------*/
+    .faq .item .title
+    {
+        font-size: 16px;
+    }
+
+    .faq .item .data
+    {
+        padding: 5px 20px 20px 20px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .data
+    {
+        padding: 20px;
+    }
+
+
+    .action_form .info .title
+    {
+        font-size: 22px;
+    }
+
+    .action_form .info .title.border
+    {
+        padding-left: 20px;
+    }
+
+
+    .action_form .info .call .phone
+    {
+        font-size: 22px;
+
+        margin-top: 5px;
+    }
+
+
+    .action_form .form .line
+    {
+        margin-bottom: 15px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .big .slide a
+    {
+        padding-bottom: 100%;
+    }
+
+
+    .product_info .images .thumbs .slider
+    {
+        margin: 20px auto 0;
+        padding: 0 60px;
+    }
+
+
+
+    /*----------------------
+        Product features
+    ----------------------*/
+    .product_features .title
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 30px;
+    }
+
+
+    .pagination .box a
+    {
+        line-height: 34px;
+
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .pagination .prev,
+    .pagination .next
+    {
+        font-size: 15px;
+    }
+
+    .pagination .prev
+    {
+        margin-right: 20px;
+    }
+
+    .pagination .next
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .contacts .name
+    {
+        width: 100%;
+        margin-bottom: 3px;
+        padding: 0;
+    }
+
+
+    footer .contacts .val
+    {
+        width: 100%;
+    }
+
+
+    footer .contacts .phone .val
+    {
+        margin: 0;
+    }
+
+    footer .contacts .phone a
+    {
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}
