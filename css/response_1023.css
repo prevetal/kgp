@@ -17,6 +17,23 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs .btn
+    {
+        font-size: 18px;
+
+        padding-bottom: 16px;
+    }
+
+    .tabs .btn + .btn
+    {
+        margin-left: auto;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -584,6 +601,48 @@
     .pagination
     {
         margin-top: 35px;
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .features .title
+    {
+        font-size: 18px;
+    }
+
+
+    .product_data .features .item + .item
+    {
+        margin-top: 8px;
+    }
+
+
+
+    /*----------------
+        Add review
+    ----------------*/
+    .add_review .form .title
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .add_review .form .row .label
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files > * + *
+    {
+        margin-top: 20px;
     }
 
 

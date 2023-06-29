@@ -224,6 +224,57 @@ $(() => {
 			}
 		})
 	})
+
+
+	// Табы
+	var locationHash = window.location.hash
+
+	$('body').on('click', '.tabs .btn', function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			const $parent           = $(this).closest('.tabs_container'),
+				  activeTab         = $(this).data('content'),
+				  $activeTabContent = $(activeTab),
+				  level             = $(this).data('level')
+
+			$parent.find('.tabs:first .btn').removeClass('active')
+			$parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			$activeTabContent.addClass('active')
+		}
+	})
+
+	if (locationHash && $('.tabs_container').length) {
+		const $activeTab        = $(`.tabs .btn[data-content="${locationHash}"]`),
+			  $activeTabContent = $(locationHash),
+			  $parent           = $activeTab.closest('.tabs_container'),
+			  level             = $activeTab.data('level')
+
+		$parent.find('.tabs:first .btn').removeClass('active')
+		$parent.find('.tab_content.' + level).removeClass('active')
+
+		$activeTab.addClass('active')
+		$activeTabContent.addClass('active')
+
+		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
+	}
+
+
+	// Добавить отзыв
+	$('.add_review_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+		$('.add_review .form').slideToggle(300)
+
+		// Авто высота у поля ввода
+		$('.form textarea.autoheight').autogrow({
+			vertical: true,
+			horizontal: false
+		})
+	})
 })
 
 

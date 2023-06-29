@@ -25,6 +25,60 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px 24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .tabs::-webkit-scrollbar
+    {
+        display: none;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .tabs .btn
+    {
+        font-size: 17px;
+
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+        padding-bottom: 15px;
+
+        vertical-align: top;
+    }
+
+    .tabs .btn + .btn
+    {
+        margin-left: 36px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -39,12 +93,6 @@
     {
         display: none;
     }
-
-
-
-    /*-------------
-        Sidebar
-    -------------*/
 
 
 
@@ -301,6 +349,65 @@
     .gallery .row > *
     {
         width: calc(50% - 20px);
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews > *
+    {
+        padding-bottom: 32px;
+    }
+
+    .reviews > * + *
+    {
+        margin-top: 32px;
+    }
+
+
+    .reviews .review .avatar + *
+    {
+        width: calc(100% - 83px);
+    }
+
+
+    .reviews .review .name
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Add review
+    ----------------*/
+    .add_review .form .title
+    {
+        font-size: 20px;
+    }
+
+
+    .add_review .form .row
+    {
+        padding: 12px 0;
+    }
+
+
+    .add_review .form .row .line
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .add_review .form .stars
+    {
+        padding-top: 4px;
     }
 
 

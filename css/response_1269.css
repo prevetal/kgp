@@ -17,6 +17,29 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .tabs .btn
+    {
+        font-size: 20px;
+
+        padding-bottom: 19px;
+    }
+
+    .tabs .btn + .btn
+    {
+        margin-left: 64px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -442,6 +465,22 @@
     .pagination
     {
         margin-top: 40px;
+    }
+
+
+
+    /*------------------
+        Product data
+    ------------------*/
+    .product_data .features .section + .section
+    {
+        margin-top: 40px;
+    }
+
+
+    .product_data .features .title
+    {
+        margin-bottom: 20px;
     }
 
 

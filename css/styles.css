@@ -476,6 +476,103 @@ button
 
 
 
+/*----------
+    Tabs
+----------*/
+.tabs
+{
+    display: flex;
+
+    margin-bottom: 32px;
+
+    border-bottom: 1px solid rgba(37, 185, 231, .4);
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+
+.tabs .btn
+{
+    color: #25b9e7;
+    font-size: 22px;
+    font-weight: 600;
+
+    position: relative;
+
+    display: block;
+
+    padding-bottom: 21px;
+
+    transition: color .2s linear;
+}
+
+.tabs .btn + .btn
+{
+    margin-left: 88px;
+}
+
+.tabs .btn:after
+{
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+
+    width: 0;
+    height: 2px;
+    margin: auto;
+
+    content: '';
+    transition: width .3s linear;
+
+    background: #25b9e7;
+}
+
+
+.tabs .btn:hover,
+.tabs .btn.active
+{
+    color: #193569;
+}
+
+.tabs .btn.active:after
+{
+    width: 100%;
+}
+
+
+.tab_content
+{
+    position: relative;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    height: 0;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.tab_content.active
+{
+    visibility: visible;
+    overflow: visible;
+
+    height: auto;
+
+    transition: opacity .5s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+
 /*------------
     Header
 ------------*/
@@ -1561,6 +1658,13 @@ header .menu .sub_menu a.active
     border: 1px solid var(--form_border_color);
     border-radius: var(--form_border_radius);
     background: var(--form_bg_color);
+}
+
+.form textarea.autoheight
+{
+    overflow: hidden;
+
+    padding: 8px 10px;
 }
 
 
@@ -3568,6 +3672,516 @@ header .menu .sub_menu a.active
 .pagination .next:hover
 {
     color: #25b9e7;
+}
+
+
+
+/*------------------
+    Product data
+------------------*/
+.product_data .features
+{
+    width: 387px;
+    max-width: 100%;
+}
+
+
+.product_data .features .section + .section
+{
+    margin-top: 49px;
+}
+
+
+.product_data .features .title
+{
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 24px;
+
+    margin-bottom: 25px;
+}
+
+
+.product_data .features .item
+{
+    line-height: 24px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.product_data .features .item + .item
+{
+    margin-top: 12px;
+}
+
+
+.product_data .features .label
+{
+    overflow: hidden;
+
+    width: 100%;
+    padding-right: 10px;
+}
+
+.product_data .features .label div
+{
+    position: relative;
+
+    display: inline-block;
+
+    padding-right: 5px;
+
+    vertical-align: top;
+}
+
+.product_data .features .label div:after
+{
+    position: absolute;
+    bottom: 6px;
+    left: 100%;
+
+    display: block;
+
+    width: 387px;
+    height: 1px;
+
+    content: '';
+
+    border-bottom: 1px dotted #8c8c8c;
+}
+
+
+.product_data .features .val
+{
+    padding-left: 5px;
+
+    white-space: nowrap;
+}
+
+
+
+/*-----------
+    Files
+-----------*/
+.files > * + *
+{
+    margin-top: 28px;
+}
+
+
+.files .file
+{
+    color: #25b9e7;
+    line-height: 24px;
+
+    display: block;
+
+    text-decoration: none;
+}
+
+
+.files .file .info
+{
+    color: #000;
+
+    opacity: .5;
+}
+
+
+
+/*-------------
+    Reviews
+-------------*/
+.reviews > *
+{
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.reviews > * + *
+{
+    margin-top: 40px;
+}
+
+
+.reviews .review
+{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.reviews .review .avatar
+{
+    color: #fff;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 63px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: 63px;
+    height: 63px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50%;
+}
+
+.reviews .review .avatar.no_img
+{
+    background: #25b9e7;
+}
+
+
+.reviews .review .avatar img
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.reviews .review .avatar + *
+{
+    display: flex;
+
+    width: calc(100% - 89px);
+    margin-left: auto;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.reviews .review .name
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+
+.reviews .review .date
+{
+    margin-bottom: 8px;
+
+    opacity: .4;
+}
+
+
+.reviews .review .stars
+{
+    display: flex;
+
+    margin-bottom: 8px;
+    margin-left: 26px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.reviews .review .stars .icon
+{
+    color: #d5d5d5;
+
+    display: block;
+
+    width: 15px;
+    height: 15px;
+}
+
+.reviews .review .stars .icon + .icon
+{
+    margin-left: 5px;
+}
+
+.reviews .review .stars .icon.active
+{
+    color: #ffa800;
+}
+
+
+.reviews .review .text
+{
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+.reviews .review .text .label
+{
+    font-weight: 600;
+    line-height: 24px;
+
+    margin-bottom: 5px;
+}
+
+
+
+/*----------------
+    Add review
+----------------*/
+.reviews ~ .add_review
+{
+    margin-top: 28px;
+}
+
+
+.add_review_btn
+{
+    color: #fff;
+    font-weight: 700;
+    line-height: 24px;
+
+    padding: 11px 41px;
+
+    border-radius: 28px;
+    background: #193569;
+}
+
+
+.add_review .form
+{
+    display: none;
+
+    width: 632px;
+    max-width: 100%;
+    padding-top: 32px;
+
+    --form_border_radius: 0;
+}
+
+
+.add_review .form .title
+{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+
+    margin-bottom: 28px;
+}
+
+
+.add_review .form .row
+{
+    padding: 16px 0;
+
+    justify-content: space-between;
+}
+
+
+.add_review .form .row .line
+{
+    margin-bottom: 19px;
+}
+
+
+.add_review .form .row .label
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+.add_review .form .line
+{
+    margin-bottom: 14px;
+}
+
+
+.add_review .form .label
+{
+    font-size: 15px;
+    line-height: 24px;
+
+    margin-bottom: 5px;
+}
+
+.add_review .form .label .required
+{
+    color: #f00;
+}
+
+
+.add_review .form .file label
+{
+    display: flex;
+
+    cursor: pointer;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.add_review .form .file label input
+{
+    display: none;
+}
+
+
+.add_review .form .file label .icon
+{
+    color: #25282b;
+
+    display: flex;
+
+    width: 63px;
+    height: 63px;
+
+    border-radius: 50%;
+    background: rgba(217, 217, 217, .5);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.add_review .form .file label .icon svg
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    opacity: .2;
+}
+
+.add_review .form .file label .icon + *
+{
+    display: flex;
+
+    max-width: calc(100% - 76px);
+    margin-left: auto;
+
+    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.add_review .form .file label .name
+{
+    color: #25b9e7;
+    font-size: 15px;
+    line-height: 24px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border-bottom: 1px dotted;
+}
+
+
+.add_review .form .file label .exp
+{
+    font-size: 12px;
+
+    width: 100%;
+    margin-top: 4px;
+
+    white-space: nowrap;
+
+    opacity: .5;
+}
+
+
+.add_review .form .stars
+{
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding-top: 9px;
+
+    justify-content: flex-end;
+}
+
+
+.add_review .form .stars input
+{
+    display: none;
+}
+
+
+.add_review .form .stars label
+{
+    color: #d5d5d5;
+
+    display: block;
+
+    width: 29px;
+    height: 29px;
+
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.add_review .form .stars label ~ label
+{
+    margin-right: 9px;
+}
+
+
+.add_review .form .stars label svg
+{
+    display: block;
+
+    width: 29px;
+    height: 29px;
+}
+
+
+.add_review .form .stars input:checked ~ label,
+.add_review .form .stars input:checked ~ label ~ label,
+.add_review .form .stars input:not(:checked) ~ label:hover,
+.add_review .form .stars input:not(:checked) ~ label:hover ~ label
+{
+    color: #ffa800;
+}
+
+
+.add_review .form .submit_btn
+{
+    width: auto;
+    padding: 11px 41px;
 }
 
 
