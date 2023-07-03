@@ -275,6 +275,28 @@ $(() => {
 			horizontal: false
 		})
 	})
+
+
+	// Смена вида отображения товаров в категории
+	$('.products .head .views .grid_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.products .head .views .btn').removeClass('active')
+		$(this).addClass('active')
+
+		$('.products .view_list').hide()
+		$('.products .view_grid').fadeIn(300)
+	})
+
+	$('.products .head .views .list_btn').click(function(e) {
+		e.preventDefault()
+
+		$('.products .head .views .btn').removeClass('active')
+		$(this).addClass('active')
+
+		$('.products .view_grid').hide()
+		$('.products .view_list').fadeIn(300)
+	})
 })
 
 

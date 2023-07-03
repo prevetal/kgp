@@ -274,6 +274,54 @@
 
 
 
+    .products .list .product .thumb
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .products .list .product .info
+    {
+        width: 100%;
+    }
+
+
+    .products .list .product .features
+    {
+        font-size: 14px;
+
+        margin-top: 12px;
+    }
+
+
+    .products .list .product .buy
+    {
+        width: 100%;
+        margin-top: 24px;
+
+        text-align: center;
+    }
+
+
+    .products .list .product .price .label
+    {
+        margin-bottom: 8px;
+    }
+
+    .products .list .product .price .val
+    {
+        font-size: 24px;
+    }
+
+
+    .products .list .product .buy_btn
+    {
+        margin-top: 20px;
+    }
+
+
+
     /*-------------------
         Contacts info
     -------------------*/
