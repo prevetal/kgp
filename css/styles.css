@@ -3655,6 +3655,98 @@ header .menu .sub_menu a.active
 }
 
 
+.product_info .data .color
+{
+    margin-top: 32px;
+}
+
+
+.product_info .data .color .label
+{
+    color: #171717;
+    font-weight: 700;
+
+    margin-bottom: 23px;
+}
+
+
+.product_info .data .color .vals
+{
+    display: flex;
+
+    margin-bottom: -20px;
+    margin-left: -26px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.product_info .data .color .vals > *
+{
+    margin-bottom: 20px;
+    margin-left: 26px;
+}
+
+
+.product_info .data .color a
+{
+    color: #171717;
+
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.product_info .data .color a .color
+{
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+}
+
+.product_info .data .color a .color:after
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+
+    content: '';
+    transition: opacity .2s linear;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+
+.product_info .data .color a .name
+{
+    margin-top: 10px;
+}
+
+
+.product_info .data .color a.active .color:after,
+.product_info .data .color a:hover .color:after
+{
+    opacity: 1;
+}
+
+
 .product_info .data .desc
 {
     margin-top: 35px;
